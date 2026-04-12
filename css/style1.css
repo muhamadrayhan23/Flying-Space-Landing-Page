@@ -1,0 +1,257 @@
+html,
+body {
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.container {
+  display: flex;
+  max-height: 800px;
+  overflow-y: auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  margin-top: 80px;
+  align-items: flex-start;
+}
+
+.product-details {
+  flex: 1;
+  padding-right: 20px;
+  text-align: right;
+}
+
+.product-details h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-align: right;
+}
+
+.product-details h2 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #666;
+  margin: 5px 0 20px;
+  text-align: right;
+}
+
+.product-details h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  text-align: right;
+}
+
+.product-details p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 20px;
+  text-align: right;
+}
+
+.product-details .price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+  text-align: right;
+}
+
+.product-details .divider {
+  border-top: 1px solid #000;
+  margin: 20px 0;
+}
+
+.product-details select,
+.product-details input {
+  width: 40%;
+  /* Ukuran form size produk dikecilkan */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product-details .quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  /* Mengatur agar elemen berada di kolom */
+  margin-top: 10px;
+  /* Menambahkan margin untuk jarak */
+}
+
+.product-details .quantity input {
+  width: 50px;
+  text-align: center;
+}
+
+.product-details .quantity button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.product-details .quantity button:hover {
+  background-color: #e9e9e9;
+}
+
+.product-details .add-to-cart {
+  background-color: #ccc;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: background-color 0.3s;
+}
+
+.product-details .add-to-cart:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.product-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-images img {
+  max-width: 90%;
+  margin-bottom: 20px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.product-images .thumbnail {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.product-images .thumbnail img {
+  width: 22%;
+  cursor: pointer;
+}
+
+.thumbnail img {
+  transition: border 0.3s ease;
+  /* Menambahkan transisi halus untuk border */
+}
+
+.thumbnail img.stroke {
+  border: 4px solid #919191;
+  /* Efek stroke berwarna merah */
+}
+
+.product-details .quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Jarak antar tombol */
+  flex-direction: row;
+  /* Mengatur agar elemen berada dalam baris */
+  margin-top: 10px;
+  /* Menambahkan margin untuk jarak */
+  margin-bottom: 20px;
+  /* Menambahkan margin bawah untuk jarak dengan elemen berikutnya */
+  justify-content: flex-end;
+  /* Menggeser tombol ke kanan */
+}
+
+.navbar {
+  transition: background-color 0.5s ease, color 0.5s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar.transparent {
+  background-color: transparent;
+}
+
+.navbar.scrolled {
+  background-color: black;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+
+}
+
+/* Navbar brand */
+.navbar-brand {
+  color: white;
+  transition: color 0.5s ease;
+}
+
+
+.footer {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left a {
+  color: #000;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.footer-left a:hover {
+  text-decoration: underline;
+}
+
+.footer-left p {
+  margin: 5px 0;
+  color: #000;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right .social-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+
+.footer-right .social-icons a {
+  color: #000;
+  margin-left: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-right .brand {
+  font-family: 'Old English Text MT', serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-right .find-us {
+  font-size: 14px;
+  margin-bottom: 10px;
+}

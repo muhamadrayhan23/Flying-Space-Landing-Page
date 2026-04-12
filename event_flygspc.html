@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Event | Flying Space</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/event_style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-white" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-weight: bold;">
+                <img src="img/logo1.png" alt="Flying Space" style="height: 50px; width: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-weight: bold;">Flying Space</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav flex-grow-1 pe-3 ms-auto justify-content-end" style="font-weight: bold;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_flygspc.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product_flygspc.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Event</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact_flygspc.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <style>
+                    /* Warna teks navbar saat halaman dimuat */
+                    .navbar-nav .nav-link {
+                        color: black;
+                        /* Set warna teks menjadi hitam */
+                    }
+
+                    .navbar-nav .nav-link:hover {
+                        text-decoration: underline;
+                        color: black;
+                        /* Pastikan warna hover tetap hitam */
+                    }
+
+                    .nav-link.active {
+                        text-decoration: underline;
+                    }
+
+                    /* Warna dan latar belakang saat scroll */
+                    #navbar {
+                        background-color: transparent;
+                        /* Latar belakang transparan saat halaman dimuat */
+                        transition: background-color 0.3s;
+                        /* Animasi transisi saat menggulir */
+                    }
+
+                    .scrolled {
+                        background-color: black !important;
+                        /* Latar belakang hitam saat scroll */
+                    }
+
+                    .scrolled .nav-link {
+                        color: white !important;
+                        /* Warna teks putih saat scroll */
+                    }
+
+                </style>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        window.onscroll = function () {
+            var navbar = document.getElementById("navbar");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        };
+    </script>
+
+    <div class="container">
+        <h1>Latest Events</h1>
+        <div class="news-grid">
+            <!-- Example News Item -->
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/jimihendrix.jpeg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/blacksabbath.jpeg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/ALL TIME LOW - Band poster.jpeg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/led-zeppelin.jpeg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/live aid poster.jpeg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/the neighborhood poster vintage.jpeg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/queenplanetmercury.jpeg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/nevermindnirvana.jpeg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/SYSTEM OF A DOWN - Band poster.jpg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/linkin park poster.jpg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/coldplay.jpg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/blink182.jpg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/neckdeep.jpg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/limpbizkit.jpg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/Radiohead.jpg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/oasis.jpg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/greenday.jpg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/thedoors.jpg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/The 1975.jpg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/misfits.jpg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/THE ALL-AMERICAN REJECTS - Band Poster.jpg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/mcr.jpg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/knuckle puck.jpg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a href="#" target="_blank">
+                    <img alt="event-image" src="img/AVENGED SEVENFOLD - Band poster.jpg">
+                </a>
+                <div class="news-category">Event Date</div>
+                <div class="news-title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officiis, obcaecati commodi
+                        aperiam minus incidunt?</p>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <button class="arrow" id="prev">&lt;</button>
+            <div class="page-numbers"></div>
+            <button class="arrow" id="next">&gt;</button>
+        </div>
+    </div>
+
+    <div class="footer" style="background-color: #000;">
+        <div class="footer-left" style=" margin-bottom: 1.5rem;
+        border-bottom: 1px solid #fff;">
+            <a href="#" style="color: #fff;">Refund Policy</a>
+            <a href="#" style="color: #fff;">How To Order</a>
+            <a href="#" style="color: #fff;">FAQ</a>
+            <a href="#" style="color: #fff;">Payment Confirmation</a>
+            <p style="color: #fff;">Copyright © 2022 - 2024 Flying Space.</p>
+        </div>
+        <div class="footer-right" style=" margin-bottom: 1.5rem;
+        border-bottom: 1px solid #fff;" id="contact">
+            <div class="brand" style="color: #fff;">flygspace</div>
+            <div class="find-us" style="color: #fff;">FIND US ON</div>
+            <div class="social-icons" style="color: #fff;">
+                <a href="#"><i class="fab fa-facebook-f" style="color: #fff;"></i></a>
+                <a href="#"><i class="fab fa-twitter" style="color: #fff;"></i></a>
+                <a href="#"><i class="fab fa-instagram" style="color: #fff;"></i></a>
+                <a href="#"><i class="fab fa-youtube" style="color: #fff;"></i></a>
+                <a href="#"><i class="fab fa-shopify" style="color: #fff;"></i></a>
+                <a href="#"><i class="fab fa-whatsapp" style="color: #fff;"></i></a>
+                <a href="#"><i class="fab fa-line" style="color: #fff;"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/paginate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
