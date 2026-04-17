@@ -51,57 +51,81 @@
                 <style>
                     /* Warna teks navbar saat halaman dimuat */
                     .navbar-nav .nav-link {
-                        color: black; /* Set warna teks menjadi hitam */
+                        color: black;
+                        /* Set warna teks menjadi hitam */
                     }
-    
+
                     .navbar-nav .nav-link:hover {
                         text-decoration: underline;
-                        color: black; /* Pastikan warna hover tetap hitam */
+                        color: black;
+                        /* Pastikan warna hover tetap hitam */
                     }
-    
+
                     .nav-link.active {
                         text-decoration: underline;
                     }
-    
+
                     /* Warna dan latar belakang saat scroll */
                     #navbar {
-                        background-color: transparent; /* Latar belakang transparan saat halaman dimuat */
-                        transition: background-color 0.3s; /* Animasi transisi saat menggulir */
+                        background-color: transparent;
+                        /* Latar belakang transparan saat halaman dimuat */
+                        transition: background-color 0.3s;
+                        /* Animasi transisi saat menggulir */
                     }
-    
+
                     .scrolled {
-                        background-color: black !important; /* Latar belakang hitam saat scroll */
+                        background-color: white !important;
+                        /* Latar belakang hitam saat scroll */
                     }
-    
+
                     .scrolled .nav-link {
-                        color: white !important; /* Warna teks putih saat scroll */
+                        color: black !important;
+                        /* Warna teks hitam saat scroll untuk product */
                     }
-    
+
                     /* Tombol hamburger */
                     .navbar-toggler {
-                        background-color: black; /* Warna tombol hamburger hitam */
+                        background-color: white;
+                        /* Warna tombol hamburger putih sebelum scroll untuk product */
                     }
-    
+
                     .scrolled .navbar-toggler {
-                        background-color: white; /* Warna tombol hamburger putih saat scroll */
+                        background-color: white;
+                        /* Warna tombol hamburger putih saat scroll */
                     }
-    
+
                     /* Warna teks offcanvas */
                     .offcanvas-body .nav-link {
-                        color: black; /* Warna teks hitam saat offcanvas dibuka */
+                        color: black;
+                        /* Warna teks hitam saat offcanvas dibuka */
                     }
-    
+
                     .offcanvas-body .nav-link:hover {
-                        color: black; /* Warna hover tetap hitam */
+                        color: black;
+                        /* Warna hover tetap hitam */
+                    }
+
+                    /* Garis hamburger hitam sebelum scroll */
+                    .navbar-toggler .navbar-toggler-icon,
+                    .navbar-toggler::before,
+                    .navbar-toggler::after {
+                        background-color: black !important;
+                    }
+
+                    /* Garis hamburger hitam saat scrolled (kontras dengan bg putih) */
+                    .scrolled .navbar-toggler .navbar-toggler-icon,
+                    .scrolled .navbar-toggler::before,
+                    .scrolled .navbar-toggler::after {
+                        background-color: black !important;
                     }
                 </style>
             </div>
         </div>
     </nav>
-    
+
     <script>
         // JavaScript untuk menambahkan kelas 'scrolled' saat scroll
-        window.onscroll = function() {
+        window.onscroll = function () {
             var navbar = document.getElementById("navbar");
             if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 navbar.classList.add("scrolled");
@@ -117,10 +141,11 @@
         </div>
         <div
             class="col-6 col-md-3 mb-3 mb-md-4 product type-product post-128384 status-publish first outofstock product_cat-cases product_cat-accessories has-post-thumbnail shipping-taxable purchasable product-type-simple">
-            <div class="product-image d-block w-100"><a href="pistial_flygspc.html" class="d-block w-100" title="View details"><img
-                        class="d-block w-100" src="img/pistial-1-500x500.jpg"><img class="product-hover d-block w-100"
-                        data-src="#" src="img/pistial-3-500x500.jpg"></a></div>
-            <div class="product-description text-white text-center text-md-right"><a href="pistial_flygspc.html" title="View details">
+            <div class="product-image d-block w-100"><a href="pistial_flygspc.html" class="d-block w-100"
+                    title="View details"><img class="d-block w-100" src="img/pistial-1-500x500.jpg"><img
+                        class="product-hover d-block w-100" data-src="#" src="img/pistial-3-500x500.jpg"></a></div>
+            <div class="product-description text-white text-center text-md-right"><a href="pistial_flygspc.html"
+                    title="View details">
                     <h3 class="d-block mb-0 product-title">PISTIAL TS</h3>
                 </a> <span class="price text-uppercase"><span class="woocommerce-Price-amount amount"><bdi><span
                                 class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;189.000</bdi></span> <ins>Out of
@@ -130,10 +155,11 @@
         </div>
         <div
             class="col-6 col-md-3 mb-3 mb-md-4 product type-product post-128377 status-publish instock product_cat-cases product_cat-accessories has-post-thumbnail shipping-taxable purchasable product-type-simple">
-            <div class="product-image d-block w-100"><a href="evilnal_flygspc.html" class="d-block w-100" title="View details"><img
-                        class="d-block w-100" src="img/evilnal-1.jpg"><img class="product-hover d-block w-100"
-                        data-src="#" src="img/evilnal-3-500x500.jpg"></a></div>
-            <div class="product-description text-center text-md-right"><a href="evilnal_flygspc.html" title="View details">
+            <div class="product-image d-block w-100"><a href="evilnal_flygspc.html" class="d-block w-100"
+                    title="View details"><img class="d-block w-100" src="img/evilnal-1.jpg"><img
+                        class="product-hover d-block w-100" data-src="#" src="img/evilnal-3-500x500.jpg"></a></div>
+            <div class="product-description text-center text-md-right"><a href="evilnal_flygspc.html"
+                    title="View details">
                     <h3 class="d-block mb-0 product-title">EVILNAL</h3>
                 </a> <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span
                                 class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;300.000</bdi></span></span>
@@ -142,10 +168,11 @@
         </div>
         <div
             class="col-6 col-md-3 mb-3 mb-md-4 product type-product post-128341 status-publish instock product_cat-sling-bags product_cat-bags has-post-thumbnail shipping-taxable purchasable product-type-simple">
-            <div class="product-image d-block w-100"><a href="hellpark_flygspc.html" class="d-block w-100" title="View details"><img
-                        class="d-block w-100" src="img/hellpark-1.jpg"><img class="product-hover d-block w-100"
-                        data-src="#" src="img/hellpark-2.jpg"></a></div>
-            <div class="product-description text-center text-md-right"><a href="hellpark_flygspc.html" title="View details">
+            <div class="product-image d-block w-100"><a href="hellpark_flygspc.html" class="d-block w-100"
+                    title="View details"><img class="d-block w-100" src="img/hellpark-1.jpg"><img
+                        class="product-hover d-block w-100" data-src="#" src="img/hellpark-2.jpg"></a></div>
+            <div class="product-description text-center text-md-right"><a href="hellpark_flygspc.html"
+                    title="View details">
                     <h3 class="d-block mb-0 product-title">HELLPARK TS</h3>
                 </a> <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span
                                 class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;189.000</bdi></span></span>
@@ -154,10 +181,11 @@
         </div>
         <div
             class="col-6 col-md-3 mb-3 mb-md-4 product type-product post-128336 status-publish last instock product_cat-eyewears product_cat-accessories has-post-thumbnail shipping-taxable purchasable product-type-simple">
-            <div class="product-image d-block w-100"><a href="skuligan_flygspc.html" class="d-block w-100" title="View details"><img
-                        class="d-block w-100" src="img/skuligan-1.jpg"><img class="product-hover d-block w-100"
-                        data-src="#" src="img/skuligan-4.jpg"></a></div>
-            <div class="product-description text-center text-md-right"><a href="skuligan_flygspc.html" title="View details">
+            <div class="product-image d-block w-100"><a href="skuligan_flygspc.html" class="d-block w-100"
+                    title="View details"><img class="d-block w-100" src="img/skuligan-1.jpg"><img
+                        class="product-hover d-block w-100" data-src="#" src="img/skuligan-4.jpg"></a></div>
+            <div class="product-description text-center text-md-right"><a href="skuligan_flygspc.html"
+                    title="View details">
                     <h3 class="d-block mb-0 product-title">SKULIGAN</h3>
                 </a> <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span
                                 class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;300.000</bdi></span></span>
@@ -166,10 +194,11 @@
         </div>
         <div
             class="col-6 col-md-3 mb-3 mb-md-4 product type-product post-128331 status-publish first instock product_cat-eyewears product_cat-accessories has-post-thumbnail shipping-taxable purchasable product-type-simple">
-            <div class="product-image d-block w-100"><a href="vortal_flygpsc.html" class="d-block w-100" title="View details"><img
-                        class="d-block w-100" src="img/vortal-1-500x500.jpg"><img class="product-hover d-block w-100"
-                        data-src="#" src="img/vortal-4.jpg"></a></div>
-            <div class="product-description text-center text-md-right"><a href="vortal_flygpsc.html" title="View details">
+            <div class="product-image d-block w-100"><a href="vortal_flygpsc.html" class="d-block w-100"
+                    title="View details"><img class="d-block w-100" src="img/vortal-1-500x500.jpg"><img
+                        class="product-hover d-block w-100" data-src="#" src="img/vortal-4.jpg"></a></div>
+            <div class="product-description text-center text-md-right"><a href="vortal_flygpsc.html"
+                    title="View details">
                     <h3 class="d-block mb-0 product-title">VORTAL</h3>
                 </a> <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span
                                 class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;300.000</bdi></span></span>
@@ -178,11 +207,12 @@
         </div>
         <div
             class="col-6 col-md-3 mb-3 mb-md-4 product type-product post-128094 status-publish instock product_cat-short-sleeves product_cat-t-shirts has-post-thumbnail shipping-taxable purchasable product-type-variable">
-            <div class="product-image d-block w-100"><a href="otfrost_flygspc.html" class="d-block w-100" title="View details"><img
-                        class="d-block w-100" src="img/otfrost-1.jpg"><img
+            <div class="product-image d-block w-100"><a href="otfrost_flygspc.html" class="d-block w-100"
+                    title="View details"><img class="d-block w-100" src="img/otfrost-1.jpg"><img
                         class="product-hover d-block w-100" data-src="#" src="img/otfrost-3.jpg"></a>
             </div>
-            <div class="product-description text-center text-md-right"><a href="otfrost_flygspc.html" title="View details">
+            <div class="product-description text-center text-md-right"><a href="otfrost_flygspc.html"
+                    title="View details">
                     <h3 class="d-block mb-0 product-title">OTFROST TS</h3>
                 </a> <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span
                                 class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;189.000</bdi></span></span>
@@ -191,10 +221,11 @@
         </div>
         <div
             class="col-6 col-md-3 mb-3 mb-md-4 product type-product post-128064 status-publish instock product_cat-short-sleeves product_cat-t-shirts has-post-thumbnail shipping-taxable purchasable product-type-variable">
-            <div class="product-image d-block w-100"><a href="outrage_flygspc.html" class="d-block w-100" title="View details"><img
-                        class="d-block w-100" src="img/outrage-ts-1-500x500.jpg"><img
+            <div class="product-image d-block w-100"><a href="outrage_flygspc.html" class="d-block w-100"
+                    title="View details"><img class="d-block w-100" src="img/outrage-ts-1-500x500.jpg"><img
                         class="product-hover d-block w-100" data-src="#" src="img/outrage-ts-3-500x500.jpg"></a></div>
-            <div class="product-description text-center text-md-right"><a href="outrage_flygspc.html" title="View details">
+            <div class="product-description text-center text-md-right"><a href="outrage_flygspc.html"
+                    title="View details">
                     <h3 class="d-block mb-0 product-title">OUTRAGE TS</h3>
                 </a> <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span
                                 class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;189.000</bdi></span></span>
@@ -203,10 +234,11 @@
         </div>
         <div
             class="col-6 col-md-3 mb-3 mb-md-4 product type-product post-128057 status-publish last instock product_cat-short-sleeves product_cat-t-shirts has-post-thumbnail shipping-taxable purchasable product-type-variable">
-            <div class="product-image d-block w-100"><a href="coldskin_flygspc.html" class="d-block w-100" title="View details"><img
-                        class="d-block w-100" src="img/coldskin-ts-1-500x500.jpg"><img
+            <div class="product-image d-block w-100"><a href="coldskin_flygspc.html" class="d-block w-100"
+                    title="View details"><img class="d-block w-100" src="img/coldskin-ts-1-500x500.jpg"><img
                         class="product-hover d-block w-100" data-src="#" src="img/coldskin-ts-3-500x500.jpg"></a></div>
-            <div class="product-description text-center text-md-right"><a href="coldskin_flygspc.html" title="View details">
+            <div class="product-description text-center text-md-right"><a href="coldskin_flygspc.html"
+                    title="View details">
                     <h3 class="d-block mb-0 product-title">COLDSKIN TS</h3>
                 </a> <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span
                                 class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;189.000</bdi></span></span>
@@ -216,10 +248,11 @@
 
         <div
             class="col-6 col-md-3 mb-3 mb-md-4 product type-product post-117064 status-publish first instock product_cat-short-sleeves product_cat-t-shirts has-post-thumbnail shipping-taxable purchasable product-type-variable">
-            <div class="product-image d-block w-100"><a href="batoid_flygspc.html" class="d-block w-100" title="View details"><img
-                        class="d-block w-100" src="img/batoid-1.jpg"><img class="product-hover d-block w-100"
-                        data-src="#" src="img/batoid-3.jpg"></a></div>
-            <div class="product-description text-center text-md-right"><a href="batoid_flygspc.html" title="View details">
+            <div class="product-image d-block w-100"><a href="batoid_flygspc.html" class="d-block w-100"
+                    title="View details"><img class="d-block w-100" src="img/batoid-1.jpg"><img
+                        class="product-hover d-block w-100" data-src="#" src="img/batoid-3.jpg"></a></div>
+            <div class="product-description text-center text-md-right"><a href="batoid_flygspc.html"
+                    title="View details">
                     <h3 class="d-block mb-0 product-title">BATOID</h3>
                 </a> <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span
                                 class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;189.000</bdi></span></span>
@@ -228,10 +261,11 @@
         </div>
         <div
             class="col-6 col-md-3 mb-3 mb-md-4 product type-product post-124187 status-publish instock product_cat-bottoms product_cat-underwear has-post-thumbnail shipping-taxable purchasable product-type-variable">
-            <div class="product-image d-block w-100"><a href="convenire_flygspc.html" class="d-block w-100" title="View details"><img
-                        class="d-block w-100" src="img/convenire-1-500x500.jpg"><img class="product-hover d-block w-100"
-                        data-src="#" src="img/convenire-3-500x500.jpg"></a></div>
-            <div class="product-description text-center text-md-right"><a href="convenire_flygspc.html" title="View details">
+            <div class="product-image d-block w-100"><a href="convenire_flygspc.html" class="d-block w-100"
+                    title="View details"><img class="d-block w-100" src="img/convenire-1-500x500.jpg"><img
+                        class="product-hover d-block w-100" data-src="#" src="img/convenire-3-500x500.jpg"></a></div>
+            <div class="product-description text-center text-md-right"><a href="convenire_flygspc.html"
+                    title="View details">
                     <h3 class="d-block mb-0 product-title">CONVENIRE</h3>
                 </a> <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span
                                 class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;189.000</bdi></span></span>
@@ -240,10 +274,11 @@
         </div>
         <div
             class="col-6 col-md-3 mb-3 mb-md-4 product type-product post-120470 status-publish instock product_cat-short-sleeves product_cat-t-shirts has-post-thumbnail shipping-taxable purchasable product-type-variable">
-            <div class="product-image d-block w-100"><a href="sparat_flygspc.html" class="d-block w-100" title="View details"><img
-                        class="d-block w-100" src="img/sparat-1-500x500.jpg"><img class="product-hover d-block w-100"
-                        data-src="#" src="img/sparat-3-500x500.jpg"></a></div>
-            <div class="product-description text-center text-md-right"><a href="sparat_flygspc.html" title="View details">
+            <div class="product-image d-block w-100"><a href="sparat_flygspc.html" class="d-block w-100"
+                    title="View details"><img class="d-block w-100" src="img/sparat-1-500x500.jpg"><img
+                        class="product-hover d-block w-100" data-src="#" src="img/sparat-3-500x500.jpg"></a></div>
+            <div class="product-description text-center text-md-right"><a href="sparat_flygspc.html"
+                    title="View details">
                     <h3 class="d-block mb-0 product-title">SPARAT</h3>
                 </a> <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span
                                 class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;189.000</bdi></span></span>
@@ -252,10 +287,11 @@
         </div>
         <div
             class="col-6 col-md-3 mb-3 mb-md-4 product type-product post-126765 status-publish last instock product_cat-sweatshirts product_cat-knitwears has-post-thumbnail shipping-taxable purchasable product-type-variable">
-            <div class="product-image d-block w-100"><a href="herbe_flygspc.html" class="d-block w-100" title="View details"><img
-                        class="d-block w-100" src="img/herbe-1-500x500.jpg"><img class="product-hover d-block w-100"
-                        data-src="#" src="img/herbe-3-500x500.jpg"></a></div>
-            <div class="product-description text-center text-md-right"><a href="herbe_flygspc.html" title="View details">
+            <div class="product-image d-block w-100"><a href="herbe_flygspc.html" class="d-block w-100"
+                    title="View details"><img class="d-block w-100" src="img/herbe-1-500x500.jpg"><img
+                        class="product-hover d-block w-100" data-src="#" src="img/herbe-3-500x500.jpg"></a></div>
+            <div class="product-description text-center text-md-right"><a href="herbe_flygspc.html"
+                    title="View details">
                     <h3 class="d-block mb-0 product-title">HERBE</h3>
                 </a> <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span
                                 class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;300.000</bdi></span></span>
@@ -264,10 +300,11 @@
         </div>
         <div
             class="col-6 col-md-3 mb-3 mb-md-4 product type-product post-124399 status-publish first instock product_cat-eyewears product_cat-accessories has-post-thumbnail shipping-taxable purchasable product-type-simple">
-            <div class="product-image d-block w-100"><a href="brutes_flygpsc.html" class="d-block w-100" title="View details"><img
-                        class="d-block w-100" src="img/brutes-1.jpg"><img class="product-hover d-block w-100"
-                        data-src="#" src="img/brutes-3.jpg"></a></div>
-            <div class="product-description text-center text-md-right"><a href="brutes_flygpsc.html" title="View details">
+            <div class="product-image d-block w-100"><a href="brutes_flygpsc.html" class="d-block w-100"
+                    title="View details"><img class="d-block w-100" src="img/brutes-1.jpg"><img
+                        class="product-hover d-block w-100" data-src="#" src="img/brutes-3.jpg"></a></div>
+            <div class="product-description text-center text-md-right"><a href="brutes_flygpsc.html"
+                    title="View details">
                     <h3 class="d-block mb-0 product-title">BRUTES</h3>
                 </a> <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span
                                 class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;300.000</bdi></span></span>
@@ -276,10 +313,11 @@
         </div>
         <div
             class="col-6 col-md-3 mb-3 mb-md-4 product type-product post-119658 status-publish instock product_cat-bags product_cat-duffel-bags has-post-thumbnail shipping-taxable purchasable product-type-simple">
-            <div class="product-image d-block w-100"><a href="vristal_flygspc.html" class="d-block w-100" title="View details"><img
-                        class="d-block w-100" src="img/vristal-1-500x500.jpg"><img class="product-hover d-block w-100"
-                        data-src="#" src="img/vristal-3-500x500.jpg"></a></div>
-            <div class="product-description text-center text-md-right"><a href="vristal_flygspc.html" title="View details">
+            <div class="product-image d-block w-100"><a href="vristal_flygspc.html" class="d-block w-100"
+                    title="View details"><img class="d-block w-100" src="img/vristal-1-500x500.jpg"><img
+                        class="product-hover d-block w-100" data-src="#" src="img/vristal-3-500x500.jpg"></a></div>
+            <div class="product-description text-center text-md-right"><a href="vristal_flygspc.html"
+                    title="View details">
                     <h3 class="d-block mb-0 product-title">VRISTAL</h3>
                 </a> <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span
                                 class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;189.000</bdi></span></span>
@@ -288,10 +326,11 @@
         </div>
         <div
             class="col-6 col-md-3 mb-3 mb-md-4 product type-product post-127237 status-publish instock product_cat-short-sleeves product_cat-t-shirts has-post-thumbnail shipping-taxable purchasable product-type-variable">
-            <div class="product-image d-block w-100"><a href="estera_flygspc.html" class="d-block w-100" title="View details"><img
-                        class="d-block w-100" src="img/estera-1-500x500.jpg"><img class="product-hover d-block w-100"
-                        data-src="#" src="img/estera-4-500x500.jpg"></a></div>
-            <div class="product-description text-center text-md-right"><a href="estera_flygspc.html" title="View details">
+            <div class="product-image d-block w-100"><a href="estera_flygspc.html" class="d-block w-100"
+                    title="View details"><img class="d-block w-100" src="img/estera-1-500x500.jpg"><img
+                        class="product-hover d-block w-100" data-src="#" src="img/estera-4-500x500.jpg"></a></div>
+            <div class="product-description text-center text-md-right"><a href="estera_flygspc.html"
+                    title="View details">
                     <h3 class="d-block mb-0 product-title">ESTERA</h3>
                 </a> <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span
                                 class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;189.000</bdi></span></span>
@@ -300,11 +339,12 @@
         </div>
         <div
             class="col-6 col-md-3 mb-3 mb-md-4 product type-product post-128048 status-publish last instock product_cat-short-sleeves product_cat-t-shirts has-post-thumbnail shipping-taxable purchasable product-type-variable">
-            <div class="product-image d-block w-100"><a href="coldrage_fylgspc.html" class="d-block w-100" title="View details"><img
-                        class="d-block w-100" src="img/coldrage-tour-wh-1-500x500.jpg"><img
+            <div class="product-image d-block w-100"><a href="coldrage_fylgspc.html" class="d-block w-100"
+                    title="View details"><img class="d-block w-100" src="img/coldrage-tour-wh-1-500x500.jpg"><img
                         class="product-hover d-block w-100" data-src="#" src="img/coldrage-tour-wh-3-500x500.jpg"></a>
             </div>
-            <div class="product-description text-center text-md-right"><a href="coldrage_fylgspc.html" title="View details">
+            <div class="product-description text-center text-md-right"><a href="coldrage_fylgspc.html"
+                    title="View details">
                     <h3 class="d-block mb-0 product-title">COLDRAGE TOUR WH</h3>
                 </a> <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span
                                 class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;189.000</bdi></span></span>

@@ -73,15 +73,36 @@
                     }
 
                     .scrolled {
-                        background-color: black !important;
+                        background-color: white !important;
                         /* Latar belakang hitam saat scroll */
                     }
 
                     .scrolled .nav-link {
-                        color: white !important;
+                        color: black !important;
                         /* Warna teks putih saat scroll */
                     }
 
+                    /* Tombol hamburger */
+                    .navbar-toggler {
+                        background-color: black !important;
+                        /* Warna tombol hamburger hitam sebelum scroll untuk event mobile */
+                    }
+
+                    .scrolled .navbar-toggler {
+                        background-color: black !important;
+                        /* Warna tombol hamburger putih saat scroll */
+                    }
+
+                    /* Warna teks offcanvas */
+                    .offcanvas-body .nav-link {
+                        color: black !important;
+                        /* Warna teks hitam saat offcanvas dibuka */
+                    }
+
+                    .offcanvas-body .nav-link:hover {
+                        color: black;
+                        /* Warna hover tetap hitam */
+                    }
                 </style>
             </div>
         </div>
